@@ -1,0 +1,1 @@
+Rejestracja członków siłowni, prowadzenie karnetów, obecności i planów treningowych

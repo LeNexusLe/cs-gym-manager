@@ -33,13 +33,15 @@ namespace GymManagement.Data
             );
 
             modelBuilder.Entity<Membership>().HasData(
-                new Membership { Id = 1, MemberId = 1, StartDate = new DateTime(2024, 1, 1).ToUniversalTime(), EndDate = new DateTime(2024, 12, 31).ToUniversalTime() },
-                new Membership { Id = 2, MemberId = 2, StartDate = new DateTime(2024, 3, 1).ToUniversalTime(), EndDate = new DateTime(2024, 9, 30).ToUniversalTime() }
+                new Membership { Id = 1, MemberId = 1, StartDate = new DateTime(2025, 6, 5).ToUniversalTime(), EndDate = new DateTime(2025, 7, 5).ToUniversalTime() },
+                new Membership { Id = 2, MemberId = 2, StartDate = new DateTime(2025, 5, 5).ToUniversalTime(), EndDate = new DateTime(2025, 6, 5).ToUniversalTime() }
             );
 
             modelBuilder.Entity<Attendance>().HasData(
-                new Attendance { Id = 1, MemberId = 1, CheckInDate = new DateTime(2024, 4, 10, 8, 30, 0).ToUniversalTime() },
-                new Attendance { Id = 2, MemberId = 2, CheckInDate = new DateTime(2024, 4, 11, 9, 0, 0).ToUniversalTime() }
+                new Attendance { Id = 1, MemberId = 1, CheckInDate = new DateTime(2025, 6, 5).ToUniversalTime() },
+                new Attendance { Id = 2, MemberId = 2, CheckInDate = new DateTime(2025, 5, 4).ToUniversalTime() },
+                new Attendance { Id = 3, MemberId = 2, CheckInDate = new DateTime(2025, 6, 15).ToUniversalTime() },
+                new Attendance { Id = 4, MemberId = 1, CheckInDate = new DateTime(2025, 5, 25).ToUniversalTime() }
             );
 
             modelBuilder.Entity<WorkoutPlan>().HasData(
